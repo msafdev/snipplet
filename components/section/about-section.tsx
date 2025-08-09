@@ -5,7 +5,7 @@ const AboutSection = () => {
         What You'll Get
       </h2>
       <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-        You'll find motion best practices, clean and performant code, and
+        You'll find design best practices, clean and performant code, and
         occasionally a reusable, production-grade component.
         <br className="mb-4" />
         Everything here is built with intent, whether it's a quick prototype or

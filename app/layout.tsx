@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
-import "./globals.css";
-import Footer from "@/components/footer";
+import "@/styles/globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,7 +31,6 @@ export default function RootLayout({
         className={`${inter.variable} ${calistoga.variable} antialiased font-sans`}
       >
         {children}
-        <Footer />
       </body>
     </html>
   );

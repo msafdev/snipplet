@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { PiArrowRightBold, PiGithubLogoBold } from "react-icons/pi";
-import { CommandButton } from "@/components/examples/command-button";
+import { PiArrowRightBold, PiStarFill } from "react-icons/pi";
+import { CommandButton } from "@/components/client/command-button";
 import ImageReveal from "../motion/image-reveal";
 import { Button } from "../ui/button";
+import { Badge } from "../ui/badge";
 
 const NextSection = () => {
   return (
@@ -12,18 +13,17 @@ const NextSection = () => {
       </h2>
       <ul className="text-sm sm:text-base text-muted-foreground leading-relaxed space-y-2">
         <li className="flex items-start gap-4">
-          <PiArrowRightBold className="mt-1" />
+          <PiArrowRightBold className="mt-1 shrink-0" />
           <p>
-            In-depth modules on <span className="text-foreground">React</span>{" "}
+            In-depth modules on <Badge variant="outline">React</Badge>{" "}
             patterns & architecture
           </p>
         </li>
         <li className="flex items-start gap-4">
-          <PiArrowRightBold className="mt-1" />
+          <PiArrowRightBold className="mt-1 shrink-0" />
           <p>
-            Advanced styling with{" "}
-            <span className="text-foreground">Tailwind</span> and custom design
-            systems
+            Modern styling with{" "}
+            <Badge variant="outline">Tailwind</Badge> and <Badge variant="outline">Shadcn</Badge>
           </p>
         </li>
         <li className="relative my-4 sm:my-6 sm:scale-105">
@@ -39,10 +39,10 @@ const NextSection = () => {
           <div className="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-background h-2/3 to-90% z-20" />
         </li>
         <li className="flex items-start gap-4">
-          <PiArrowRightBold className="mt-1" />
+          <PiArrowRightBold className="mt-1 shrink-0" />
           <p>
             Advanced animation techniques with{" "}
-            <span className="text-foreground">Motion</span>
+            <Badge variant="outline">Motion</Badge>
           </p>
         </li>
         <li className="flex items-center gap-4 flex-wrap justify-center my-4 sm:my-6">
@@ -51,9 +51,9 @@ const NextSection = () => {
           <CommandButton>F</CommandButton>
         </li>
         <li className="flex items-start gap-4">
-          <PiArrowRightBold className="mt-1" />
+          <PiArrowRightBold className="mt-1 shrink-0" />
           <p>
-            Everything is <span className="text-foreground">open-sourced</span>,
+            Everything is <span className="text-foreground text-sm">open-sourced</span>,
             nothing hidden
           </p>
         </li>
@@ -61,8 +61,8 @@ const NextSection = () => {
           <ImageReveal image="/assets/allyssa-olaivar.jpg" />
 
           <Button className="border" variant="secondary">
-            <PiGithubLogoBold />
-            Give a star
+            <PiStarFill className="text-yellow-500"/>
+            Star the repo
           </Button>
         </li>
       </ul>

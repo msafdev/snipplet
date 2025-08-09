@@ -4,7 +4,7 @@ import { PiArrowElbowDownLeftBold } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col pt-32 pb-24 items-center justify-center">
+    <footer className="w-full flex flex-col pb-12 md:24 items-center justify-center">
       <form className="w-full max-w-lg space-y-4">
         <h3 className="font-display text-lg sm:text-xl text-foreground">
           Join us
@@ -17,11 +17,11 @@ const Footer = () => {
           <Input
             type="email"
             placeholder="you@example.com"
-            className="flex-1 pe-24 text-sm"
+            className="h-10 flex-1 pe-24 text-sm"
           />
           <Button
             type="submit"
-            className="absolute top-1/2 -translate-y-1/2 right-px rounded-s-none"
+            className="absolute top-1/2 -translate-y-1/2 right-1 rounded-s-none rounded-e"
             size="sm"
             variant="ghost"
           >
